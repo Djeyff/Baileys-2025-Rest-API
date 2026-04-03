@@ -34,6 +34,9 @@ RUN npx prisma generate
 # Build the application
 RUN npm run build
 
+# Copy WAProto and WASignalGroup into dist/ (compiled code resolves these relative to dist/)
+RUN cp -r WAProto dist/ && cp -r WASignalGroup dist/
+
 # Create necessary directories
 RUN mkdir -p logs uploads temp auth_sessions
 
