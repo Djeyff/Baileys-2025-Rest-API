@@ -26,11 +26,11 @@
     "engine-requirements.js"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.app.json",
     "build:all": "tsc && typedoc",
     "build:docs": "typedoc",
     "build:tsc": "tsc",
-    "start": "node dist/app.js",
+    "start": "node dist/src/app.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "dev:debug": "ts-node-dev --inspect --respawn --transpile-only src/app.ts",
     "migrate": "npx prisma migrate dev",

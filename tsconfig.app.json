@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "CommonJS",
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "dist",
+    "strict": false,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "noImplicitThis": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": false,
+    "noEmitOnError": false,
+    "declaration": false,
+    "lib": ["es2020", "esnext.array", "DOM"]
+  },
+  "include": [
+    "./src/app.ts",
+    "./src/index.ts",
+    "./src/middleware/**/*.ts",
+    "./src/routes/**/*.ts",
+    "./src/services/**/*.ts",
+    "./src/Types/**/*.ts",
+    "./src/Utils/**/*.ts"
+  ],
+  "exclude": ["node_modules", "src/Tests/*"]
+}
